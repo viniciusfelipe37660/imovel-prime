@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ImóvelPrime — Consultoria imobiliária premium em São Paulo. Encontre seu imóvel ideal com assessoria completa de compra, venda e locação. Especialistas no mercado de alto padrão.">
+  <meta name="keywords" content="imobiliária, imóveis São Paulo, compra de imóveis, venda de imóveis, imóvel alto padrão, consultoria imobiliária, apartamento São Paulo">
+  <meta name="author" content="ImóvelPrime">
+  <meta property="og:title" content="ImóvelPrime | Consultoria Imobiliária Premium">
+  <meta property="og:description" content="Encontre o imóvel perfeito com quem entende do mercado. Assessoria completa do início ao fim.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://imovelprime.com.br">
+  <title>ImóvelPrime | Consultoria Imobiliária Premium — São Paulo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+          <path d="M15 4L3 14h3v12h8v-7h2v7h8V14h3L15 4z" fill="currentColor" opacity=".3"/>
+          <path d="M15 2L1 13.5h4V27h9v-7h2v7h9V13.5h4L15 2z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        </svg>
+        Imóvel<span>Prime</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#imoveis">Imóveis</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="tel:+5511940028922" class="nav__phone">📞 (11) 94002-8922</a>
+        <a href="#contato" class="btn btn--primary">Falar com Consultor</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <div class="hero__text">
+        <span class="hero__badge reveal">Especialistas em Alto Padrão · São Paulo</span>
+        <h1 class="hero__title reveal">Encontre o imóvel<br>que <em>transforma</em><br>sua vida.</h1>
+        <p class="hero__desc reveal">Mais de 20 anos conectando famílias e investidores aos melhores imóveis de São Paulo. Assessoria personalizada do primeiro contato à entrega das chaves.</p>
+        <div class="hero__actions reveal">
+          <a href="#imoveis" class="btn btn--gold btn--lg">Ver Imóveis</a>
+          <a href="#contato" class="btn btn--ghost btn--lg">Falar com Consultor</a>
+        </div>
+      </div>
+      <div class="hero__search reveal">
+        <div class="search-box">
+          <h3>Buscar Imóveis</h3>
+          <div class="search-tabs">
+            <button class="search-tab active" data-type="comprar">Comprar</button>
+            <button class="search-tab" data-type="alugar">Alugar</button>
+            <button class="search-tab" data-type="lançamentos">Lançamentos</button>
+          </div>
+          <form class="search-form" id="searchForm">
+            <div class="search-form__group">
+              <label>Tipo de imóvel</label>
+              <select>
+                <option>Apartamento</option>
+                <option>Casa</option>
+                <option>Cobertura</option>
+                <option>Studio</option>
+                <option>Comercial</option>
+                <option>Terreno</option>
+              </select>
+            </div>
+            <div class="search-form__group">
+              <label>Bairro ou cidade</label>
+              <input type="text" placeholder="Ex: Jardins, Moema, Itaim...">
+            </div>
+            <div class="search-form__row">
+              <div class="search-form__group">
+                <label>Quartos</label>
+                <select>
+                  <option>Qualquer</option>
+                  <option>1+</option><option>2+</option><option>3+</option><option>4+</option>
+                </select>
+              </div>
+              <div class="search-form__group">
+                <label>Vagas</label>
+                <select>
+                  <option>Qualquer</option>
+                  <option>1+</option><option>2+</option><option>3+</option>
+                </select>
+              </div>
+            </div>
+            <div class="search-form__group">
+              <label>Faixa de preço</label>
+              <select>
+                <option>Qualquer faixa</option>
+                <option>Até R$ 500 mil</option>
+                <option>R$ 500 mil – R$ 1 mi</option>
+                <option>R$ 1 mi – R$ 2 mi</option>
+                <option>R$ 2 mi – R$ 5 mi</option>
+                <option>Acima de R$ 5 mi</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              Buscar Imóveis
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="hero__stats-bar">
+      <div class="container hero__stats">
+        <div class="stat-item"><strong class="counter" data-target="1400">0</strong><span>+</span><small>Imóveis Vendidos</small></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><strong class="counter" data-target="20">0</strong><span>+</span><small>Anos de Mercado</small></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><strong class="counter" data-target="98">0</strong><span>%</span><small>Satisfação dos Clientes</small></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><strong class="counter" data-target="2800">0</strong><span>+</span><small>Famílias Atendidas</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMÓVEIS DESTAQUE -->
+  <section class="section imoveis" id="imoveis">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Seleção Exclusiva</span>
+        <h2>Imóveis em <em>destaque</em></h2>
+        <p>Uma curadoria dos imóveis mais exclusivos disponíveis em São Paulo. Cada propriedade selecionada por nossa equipe de especialistas.</p>
+      </div>
+      <div class="imoveis__filter reveal">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="apartamento">Apartamentos</button>
+        <button class="filter-btn" data-filter="cobertura">Coberturas</button>
+        <button class="filter-btn" data-filter="casa">Casas</button>
+      </div>
+      <div class="imoveis__grid">
+        <article class="imovel-card reveal" data-type="apartamento">
+          <div class="imovel-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=700&q=80" alt="Apartamento moderno nos Jardins" loading="lazy" width="700" height="460">
+            <span class="imovel-card__tag">À Venda</span>
+            <button class="imovel-card__fav" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="imovel-card__body">
+            <p class="imovel-card__location">📍 Jardins, São Paulo</p>
+            <h3>Apartamento Garden de Luxo</h3>
+            <div class="imovel-card__details">
+              <span>🛏 3 Quartos</span>
+              <span>🚿 2 Banheiros</span>
+              <span>🚗 2 Vagas</span>
+              <span>📐 182 m²</span>
+            </div>
+            <div class="imovel-card__footer">
+              <span class="imovel-card__price">R$ 2.850.000</span>
+              <a href="#contato" class="btn btn--primary-sm">Ver Detalhes</a>
+            </div>
+          </div>
+        </article>
+        <article class="imovel-card reveal" data-type="cobertura">
+          <div class="imovel-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700&q=80" alt="Cobertura duplex no Itaim Bibi" loading="lazy" width="700" height="460">
+            <span class="imovel-card__tag imovel-card__tag--premium">Exclusivo</span>
+            <button class="imovel-card__fav" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="imovel-card__body">
+            <p class="imovel-card__location">📍 Itaim Bibi, São Paulo</p>
+            <h3>Cobertura Duplex com Vista 360°</h3>
+            <div class="imovel-card__details">
+              <span>🛏 4 Quartos</span>
+              <span>🚿 5 Banheiros</span>
+              <span>🚗 4 Vagas</span>
+              <span>📐 420 m²</span>
+            </div>
+            <div class="imovel-card__footer">
+              <span class="imovel-card__price">R$ 8.900.000</span>
+              <a href="#contato" class="btn btn--primary-sm">Ver Detalhes</a>
+            </div>
+          </div>
+        </article>
+        <article class="imovel-card reveal" data-type="apartamento">
+          <div class="imovel-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?w=700&q=80" alt="Apartamento moderno no Moema" loading="lazy" width="700" height="460">
+            <span class="imovel-card__tag">À Venda</span>
+            <button class="imovel-card__fav" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="imovel-card__body">
+            <p class="imovel-card__location">📍 Moema, São Paulo</p>
+            <h3>Apartamento Alto Padrão Reformado</h3>
+            <div class="imovel-card__details">
+              <span>🛏 2 Quartos</span>
+              <span>🚿 2 Banheiros</span>
+              <span>🚗 1 Vaga</span>
+              <span>📐 95 m²</span>
+            </div>
+            <div class="imovel-card__footer">
+              <span class="imovel-card__price">R$ 1.350.000</span>
+              <a href="#contato" class="btn btn--primary-sm">Ver Detalhes</a>
+            </div>
+          </div>
+        </article>
+        <article class="imovel-card reveal" data-type="casa">
+          <div class="imovel-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80" alt="Casa alto padrão no Alto de Pinheiros" loading="lazy" width="700" height="460">
+            <span class="imovel-card__tag imovel-card__tag--aluguel">Aluguel</span>
+            <button class="imovel-card__fav" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="imovel-card__body">
+            <p class="imovel-card__location">📍 Alto de Pinheiros, São Paulo</p>
+            <h3>Casa com Piscina e Jardim</h3>
+            <div class="imovel-card__details">
+              <span>🛏 4 Quartos</span>
+              <span>🚿 4 Banheiros</span>
+              <span>🚗 3 Vagas</span>
+              <span>📐 350 m²</span>
+            </div>
+            <div class="imovel-card__footer">
+              <span class="imovel-card__price">R$ 18.000/mês</span>
+              <a href="#contato" class="btn btn--primary-sm">Ver Detalhes</a>
+            </div>
+          </div>
+        </article>
+        <article class="imovel-card reveal" data-type="apartamento">
+          <div class="imovel-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=700&q=80" alt="Studio moderno na Vila Nova Conceição" loading="lazy" width="700" height="460">
+            <span class="imovel-card__tag">À Venda</span>
+            <button class="imovel-card__fav" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="imovel-card__body">
+            <p class="imovel-card__location">📍 Vila Nova Conceição, São Paulo</p>
+            <h3>Studio Contemporâneo Integrado</h3>
+            <div class="imovel-card__details">
+              <span>🛏 1 Quarto</span>
+              <span>🚿 1 Banheiro</span>
+              <span>🚗 1 Vaga</span>
+              <span>📐 52 m²</span>
+            </div>
+            <div class="imovel-card__footer">
+              <span class="imovel-card__price">R$ 780.000</span>
+              <a href="#contato" class="btn btn--primary-sm">Ver Detalhes</a>
+            </div>
+          </div>
+        </article>
+        <article class="imovel-card reveal" data-type="cobertura">
+          <div class="imovel-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=700&q=80" alt="Penthouse na Berrini" loading="lazy" width="700" height="460">
+            <span class="imovel-card__tag imovel-card__tag--premium">Novo</span>
+            <button class="imovel-card__fav" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="imovel-card__body">
+            <p class="imovel-card__location">📍 Berrini, São Paulo</p>
+            <h3>Penthouse com Terraço Privativo</h3>
+            <div class="imovel-card__details">
+              <span>🛏 3 Quartos</span>
+              <span>🚿 3 Banheiros</span>
+              <span>🚗 3 Vagas</span>
+              <span>📐 240 m²</span>
+            </div>
+            <div class="imovel-card__footer">
+              <span class="imovel-card__price">R$ 5.200.000</span>
+              <a href="#contato" class="btn btn--primary-sm">Ver Detalhes</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="imoveis__cta reveal">
+        <a href="#contato" class="btn btn--outline">Ver Todos os Imóveis →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="section servicos" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Como podemos ajudar</span>
+        <h2>Serviços <em>completos</em></h2>
+        <p>Do início ao fim, cuidamos de todos os aspectos da sua transação imobiliária com profissionalismo e transparência.</p>
+      </div>
+      <div class="servicos__grid">
+        <article class="servico-card reveal">
+          <div class="servico-card__icon">🏠</div>
+          <h3>Compra de Imóveis</h3>
+          <p>Encontramos as melhores oportunidades de acordo com seu perfil e orçamento. Análise de viabilidade e acompanhamento jurídico completo.</p>
+          <a href="#contato" class="servico-card__link">Saiba mais →</a>
+        </article>
+        <article class="servico-card reveal">
+          <div class="servico-card__icon">💰</div>
+          <h3>Venda de Imóveis</h3>
+          <p>Avaliação gratuita do seu imóvel, estratégia de marketing profissional e negociação para garantir o melhor preço do mercado.</p>
+          <a href="#contato" class="servico-card__link">Saiba mais →</a>
+        </article>
+        <article class="servico-card reveal">
+          <div class="servico-card__icon">🔑</div>
+          <h3>Locação</h3>
+          <p>Gestão completa de locação: análise de inquilinos, contratos, garantias e administração do imóvel para o proprietário.</p>
+          <a href="#contato" class="servico-card__link">Saiba mais →</a>
+        </article>
+        <article class="servico-card reveal">
+          <div class="servico-card__icon">📊</div>
+          <h3>Consultoria de Investimento</h3>
+          <p>Análise de mercado e oportunidades de investimento imobiliário com foco em valorização e retorno sobre o capital.</p>
+          <a href="#contato" class="servico-card__link">Saiba mais →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section sobre" id="sobre">
+    <div class="container sobre__inner">
+      <div class="sobre__image reveal">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80" alt="Equipe ImóvelPrime em reunião" loading="lazy" width="700" height="560">
+        <div class="sobre__floater">
+          <div class="sobre__floater-item">
+            <strong>★ 4.9</strong>
+            <small>no Google</small>
+          </div>
+          <div class="sobre__floater-divider"></div>
+          <div class="sobre__floater-item">
+            <strong>CRECI</strong>
+            <small>Certificado SP</small>
+          </div>
+        </div>
+      </div>
+      <div class="sobre__content reveal">
+        <span class="section-tag">Quem Somos</span>
+        <h2>20 anos construindo<br>sonhos e <em>patrimônios.</em></h2>
+        <p>A ImóvelPrime nasceu com a missão de oferecer uma experiência imobiliária verdadeiramente diferenciada em São Paulo. Acreditamos que cada transação é única e merece atenção personalizada.</p>
+        <p>Nossa equipe de 30 consultores especializados cobre os principais bairros nobres de São Paulo, com profundo conhecimento do mercado local e excelência no atendimento.</p>
+        <div class="sobre__valores">
+          <div class="valor-item">
+            <span class="valor-item__icon">🎯</span>
+            <div><strong>Transparência</strong><p>Sem surpresas. Cada etapa explicada de forma clara e honesta.</p></div>
+          </div>
+          <div class="valor-item">
+            <span class="valor-item__icon">⚡</span>
+            <div><strong>Agilidade</strong><p>Processo otimizado para fechar negócios no menor tempo possível.</p></div>
+          </div>
+          <div class="valor-item">
+            <span class="valor-item__icon">🛡️</span>
+            <div><strong>Segurança Jurídica</strong><p>Assessoria jurídica própria para proteger sua transação.</p></div>
+          </div>
+        </div>
+        <a href="#contato" class="btn btn--primary">Falar com Especialista</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="section depoimentos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">+2.800 clientes satisfeitos</span>
+        <h2>Histórias de sucesso <em>reais</em></h2>
+      </div>
+      <div class="depoimentos__grid">
+        <article class="depo-card reveal">
+          <div class="depo-card__stars">★★★★★</div>
+          <p>"A ImóvelPrime encontrou nosso apartamento ideal em Moema em menos de 3 semanas. O processo foi muito transparente e o suporte jurídico foi excelente. Recomendo sem hesitar."</p>
+          <footer>
+            <div class="depo-avatar" style="background:#1e3a5f">MR</div>
+            <div><strong>Marcos Ribeiro</strong><small>Comprou em Moema · 2024</small></div>
+          </footer>
+        </article>
+        <article class="depo-card reveal">
+          <div class="depo-card__stars">★★★★★</div>
+          <p>"Vendi meu apartamento no Itaim em 45 dias pelo preço que eu queria. A estratégia de marketing e as fotos profissionais fizeram toda a diferença. Resultado muito acima das expectativas."</p>
+          <footer>
+            <div class="depo-avatar" style="background:#c9a84c">AC</div>
+            <div><strong>Ana Carolina Ferreira</strong><small>Vendeu no Itaim Bibi · 2024</small></div>
+          </footer>
+        </article>
+        <article class="depo-card reveal">
+          <div class="depo-card__stars">★★★★★</div>
+          <p>"Primeiro investimento imobiliário da minha vida. A equipe da ImóvelPrime me guiou em cada detalhe, desde a análise de valorização até a documentação. Me sinto muito seguro com minha escolha."</p>
+          <footer>
+            <div class="depo-avatar" style="background:#2d6a4f">TP</div>
+            <div><strong>Thiago Pimentel</strong><small>Investidor · 2023</small></div>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section contato" id="contato">
+    <div class="container contato__inner">
+      <div class="contato__info reveal">
+        <span class="section-tag">Entre em Contato</span>
+        <h2>Pronto para dar o<br>próximo <em>passo</em>?</h2>
+        <p>Nossos consultores estão prontos para entender sua necessidade e encontrar as melhores opções para você. Atendimento sem compromisso.</p>
+        <div class="contato__canais">
+          <a href="tel:+5511940028922" class="canal-item">
+            <span class="canal-item__icon">📞</span>
+            <div><strong>(11) 94002-8922</strong><small>Seg–Sáb · 8h às 20h</small></div>
+          </a>
+          <a href="https://wa.me/5511940028922" class="canal-item">
+            <span class="canal-item__icon">💬</span>
+            <div><strong>WhatsApp</strong><small>Resposta em até 1 hora</small></div>
+          </a>
+          <a href="mailto:contato@imovelprime.com.br" class="canal-item">
+            <span class="canal-item__icon">✉️</span>
+            <div><strong>contato@imovelprime.com.br</strong><small>Resposta em até 24h</small></div>
+          </a>
+        </div>
+      </div>
+      <form class="contato__form reveal" id="contatoForm" novalidate>
+        <h3>Solicitar Atendimento</h3>
+        <div class="form-group">
+          <label>Nome completo</label>
+          <input type="text" placeholder="Seu nome" autocomplete="name" required>
+        </div>
+        <div class="form-group">
+          <label>E-mail</label>
+          <input type="email" placeholder="seu@email.com" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+          <label>Telefone / WhatsApp</label>
+          <input type="tel" id="telefoneContato" placeholder="(11) 99999-9999" required>
+        </div>
+        <div class="form-group">
+          <label>Interesse</label>
+          <select required>
+            <option value="">O que você precisa?</option>
+            <option>Quero comprar um imóvel</option>
+            <option>Quero vender meu imóvel</option>
+            <option>Quero alugar um imóvel</option>
+            <option>Quero colocar meu imóvel para alugar</option>
+            <option>Consultoria de investimento</option>
+            <option>Avaliação de imóvel</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Mensagem (opcional)</label>
+          <textarea rows="3" placeholder="Conte um pouco mais sobre o que você procura..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Solicitar Atendimento Gratuito</button>
+        <p class="form-note">*Entraremos em contato em até 2 horas. Sem compromisso.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">
+          <svg width="26" height="26" viewBox="0 0 30 30" fill="none">
+            <path d="M15 4L3 14h3v12h8v-7h2v7h8V14h3L15 4z" fill="currentColor" opacity=".3"/>
+            <path d="M15 2L1 13.5h4V27h9v-7h2v7h9V13.5h4L15 2z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          </svg>
+          Imóvel<span>Prime</span>
+        </a>
+        <p>Conectando famílias e investidores aos melhores imóveis de São Paulo há mais de 20 anos.</p>
+        <p class="footer__creci">CRECI SP — J-45678</p>
+      </div>
+      <nav class="footer__nav">
+        <h4>Imóveis</h4>
+        <ul>
+          <li><a href="#">Apartamentos</a></li>
+          <li><a href="#">Coberturas</a></li>
+          <li><a href="#">Casas</a></li>
+          <li><a href="#">Lançamentos</a></li>
+          <li><a href="#">Imóveis Comerciais</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__nav">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Nossa equipe</a></li>
+          <li><a href="#">Blog imobiliário</a></li>
+          <li><a href="#">Trabalhe conosco</a></li>
+        </ul>
+      </nav>
+      <address class="footer__contact">
+        <h4>Escritório</h4>
+        <p>📍 Av. Brigadeiro Faria Lima, 2369<br>Jardim Paulistano — São Paulo, SP</p>
+        <p>📞 <a href="tel:+5511940028922">(11) 94002-8922</a></p>
+        <p>✉️ <a href="mailto:contato@imovelprime.com.br">contato@imovelprime.com.br</a></p>
+        <p>🕐 Seg–Sex: 8h às 19h<br>Sábado: 9h às 14h</p>
+      </address>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2024 ImóvelPrime. Todos os direitos reservados. CRECI SP J-45678.</p>
+      <p>Desenvolvido por <a href="https://www.linkedin.com/in/viniciusfelipepereira" target="_blank" rel="noopener">Vinicius Felipe</a></p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5511940028922" class="whatsapp-fab" aria-label="WhatsApp" target="_blank" rel="noopener">
+    <svg width="28" height="28" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
